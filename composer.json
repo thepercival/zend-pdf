@@ -1,11 +1,11 @@
 {
-    "name": "zf1s/zend-pdf",
+    "name": "thepercival/zend-pdf",
     "description": "Zend Framework 1 Pdf package",
     "keywords": ["framework", "zf1", "zend", "pdf"],
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=8.0",
         "ext-ctype": "*",
         "ext-gd": "*",
         "ext-iconv": "*",
@@ -13,6 +13,12 @@
         "zf1s/zend-exception": "^1.13.4",
         "zf1s/zend-log": "^1.13.4",
         "zf1s/zend-memory": "^1.13.4"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.6"
+    },
+    "scripts": {
+        "psalm": "XDEBUG_MODE=off vendor/bin/psalm --output-format=phpstorm --no-diff"
     },
     "autoload": {
         "psr-0": {
